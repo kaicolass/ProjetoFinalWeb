@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TELA DE LOGIN -->
+  <div id="view-login" class="view">
+    <div class="card">
+      <h1 class="logo">✓ ToDo</h1>
+      <h2>Entrar</h2>
+      <div id="login-error" class="alert hidden"></div>
+      <form id="form-login">
+        <div class="field">
+          <label>E-mail</label>
+          <input type="email" id="login-email" placeholder="seu@email.com" required />
+        </div>
+        <div class="field">
+          <label>Senha</label>
+          <input type="password" id="login-senha" placeholder="••••••" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="btn-login">Entrar</button>
+      </form>
+      <p class="link-text">Não tem conta? <a href="#" id="ir-cadastro">Cadastre-se</a></p>
+    </div>
+  </div>
+
+  <!-- TELA DE CADASTRO -->
+  <div id="view-cadastro" class="view hidden">
+    <div class="card">
+      <h1 class="logo">✓ ToDo</h1>
+      <h2>Criar conta</h2>
+      <div id="cadastro-error" class="alert hidden"></div>
+      <div id="cadastro-success" class="alert alert-success hidden"></div>
+      <form id="form-cadastro">
+        <div class="field">
+          <label>Nome</label>
+          <input type="text" id="cadastro-nome" placeholder="Seu nome" required />
+        </div>
+        <div class="field">
+          <label>E-mail</label>
+          <input type="email" id="cadastro-email" placeholder="seu@email.com" required />
+        </div>
+        <div class="field">
+          <label>Senha <span class="hint">(mínimo 6 caracteres)</span></label>
+          <input type="password" id="cadastro-senha" placeholder="••••••" minlength="6" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="btn-cadastro">Criar conta</button>
+      </form>
+      <p class="link-text">Já tem conta? <a href="#" id="ir-login">Entrar</a></p>
+    </div>
+  </div>
+
+  <!-- TELA DE TAREFAS -->
+  <div id="view-tarefas" class="view hidden">
+    <header class="app-header">
+      <span class="logo">✓ ToDo</span>
+      <div class="header-right">
+        <span id="usuario-nome" class="usuario-nome"></span>
+        <button class="btn btn-outline" id="btn-logout">Sair</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card nova-tarefa-card">
+        <h3>Nova tarefa</h3>
+        <form id="form-nova-tarefa">
+          <div class="field">
+            <input type="text" id="nova-titulo" placeholder="Título da tarefa" required />
+          </div>
+          <div class="field">
+            <input type="text" id="nova-descricao" placeholder="Descrição (opcional)" />
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-adicionar">Adicionar</button>
+        </form>
+      </div>
+
+      <div class="tarefas-header">
+        <h3>Minhas Tarefas</h3>
+        <span id="resumo-tarefas" class="resumo"></span>
+      </div>
+
+      <div id="tarefas-error" class="alert hidden"></div>
+      <div id="loading" class="loading hidden">Carregando...</div>
+      <ul id="lista-tarefas"></ul>
+      <p id="lista-vazia" class="lista-vazia hidden">Nenhuma tarefa ainda. Adicione a primeira acima!</p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
