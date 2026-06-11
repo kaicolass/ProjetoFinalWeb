@@ -1,0 +1,18 @@
+# Supabase
+.branches
+.temp
+
+# dotenvx
+.env.keys
+.env.local
+.env.*.local
+.env
+
+# Configurações do agente IA
+.claude/
+
+# Arquivos temporários do Supabase
+supabase/.temp/
+
+# Configurações locais do Supabase
+supabase/config.toml
