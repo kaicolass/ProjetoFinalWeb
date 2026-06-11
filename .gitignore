@@ -20,3 +20,6 @@ supabase/config.toml
 # Arquivos compilados do Java / Maven
 *.class
 backend/target/
+
+#application properties
+application.properties
