@@ -1,0 +1,7 @@
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/repositories/UsuarioRepository.java
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/security/UserDetailsServiceImpl.java
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/security/SecurityConfig.java
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/security/JwtUtil.java
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/security/JwtAuthFilter.java
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/TodoApplication.java
+/home/kaique/Documentos/ProjetoFinalWeb/backend/src/main/java/com/trabalho/todo/models/Usuario.java

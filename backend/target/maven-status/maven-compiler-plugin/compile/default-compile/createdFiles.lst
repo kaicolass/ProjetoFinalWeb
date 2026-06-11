@@ -1,0 +1,7 @@
+com/trabalho/todo/security/JwtUtil.class
+com/trabalho/todo/security/JwtAuthFilter.class
+com/trabalho/todo/TodoApplication.class
+com/trabalho/todo/repositories/UsuarioRepository.class
+com/trabalho/todo/security/UserDetailsServiceImpl.class
+com/trabalho/todo/security/SecurityConfig.class
+com/trabalho/todo/models/Usuario.class
