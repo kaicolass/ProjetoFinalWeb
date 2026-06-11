@@ -16,3 +16,7 @@ supabase/.temp/
 
 # Configurações locais do Supabase
 supabase/config.toml
+
+# Arquivos compilados do Java / Maven
+*.class
+backend/target/
